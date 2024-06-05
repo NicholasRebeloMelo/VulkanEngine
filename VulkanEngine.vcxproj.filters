@@ -13,59 +13,64 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Resource Files\shaders">
-      <UniqueIdentifier>{b054dce9-907d-4857-9669-49e4c4bc0b52}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Window.cpp">
+    <ClCompile Include="src\Window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SceneManager.cpp">
+    <ClCompile Include="src\SceneManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ve_pipeline.cpp">
+    <ClCompile Include="src\ve_pipeline.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ve_device.cpp">
+    <ClCompile Include="src\ve_device.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ve_swap_chain.cpp">
+    <ClCompile Include="src\ve_swap_chain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ve_model.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Window.hpp">
+    <ClInclude Include="src\Window.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SceneManager.hpp">
+    <ClInclude Include="src\SceneManager.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ve_pipeline.hpp">
+    <ClInclude Include="src\ve_pipeline.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ve_device.hpp">
+    <ClInclude Include="src\ve_device.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ve_swap_chain.hpp">
+    <ClInclude Include="src\ve_swap_chain.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="resource.h">
+    <ClInclude Include="src\ve_model.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="simpleShader.vert.glsl">
-      <Filter>Resource Files\shaders</Filter>
-    </None>
-    <None Include="simpleShader.frag.glsl">
-      <Filter>Resource Files\shaders</Filter>
-    </None>
     <None Include="compile.bat">
       <Filter>Source Files</Filter>
     </None>
+    <None Include="shaders\simpleShader.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\simpleShader.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="envWindowsExample.cmake" />
+    <None Include=".env.cmake" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
   </ItemGroup>
 </Project>

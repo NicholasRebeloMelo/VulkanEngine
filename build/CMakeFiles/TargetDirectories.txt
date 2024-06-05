@@ -1,0 +1,4 @@
+C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/CMakeFiles/VulkanEngine.dir
+C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/CMakeFiles/Shaders.dir
+C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/CMakeFiles/ZERO_CHECK.dir
