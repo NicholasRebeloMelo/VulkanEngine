@@ -1,9 +1,6 @@
 #include "ve_pipeline.hpp"
 #include"ve_model.hpp"
 
-//vulkan
-//#include "vulkan/vulkan.h"
-
 //std
 #include <fstream>
 #include <stdexcept>

@@ -142,6 +142,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\simple_render_system.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\SceneManager.cpp" />
     <ClCompile Include="src\ve_device.cpp" />
@@ -149,14 +150,18 @@
     <ClCompile Include="src\ve_pipeline.cpp" />
     <ClCompile Include="src\ve_swap_chain.cpp" />
     <ClCompile Include="src\Window.cpp" />
+    <ClCompile Include="src\ve_renderer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\simple_render_system.hpp" />
     <ClInclude Include="src\SceneManager.hpp" />
     <ClInclude Include="src\ve_device.hpp" />
     <ClInclude Include="src\ve_model.hpp" />
     <ClInclude Include="src\ve_pipeline.hpp" />
     <ClInclude Include="src\ve_swap_chain.hpp" />
     <ClInclude Include="src\Window.hpp" />
+    <ClInclude Include="src\ve_gameobject.hpp" />
+    <ClInclude Include="src\ve_renderer.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".env.cmake" />
