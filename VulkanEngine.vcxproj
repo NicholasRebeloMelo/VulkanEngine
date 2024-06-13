@@ -142,6 +142,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\mouse_view_controller.cpp" />
+    <ClCompile Include="src\keyboard_movement_controller.cpp" />
     <ClCompile Include="src\simple_render_system.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\SceneManager.cpp" />
@@ -151,8 +153,11 @@
     <ClCompile Include="src\ve_swap_chain.cpp" />
     <ClCompile Include="src\Window.cpp" />
     <ClCompile Include="src\ve_renderer.cpp" />
+    <ClCompile Include="src\ve_camera.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\mouse_view_controller.hpp" />
+    <ClInclude Include="src\keyboard_movement_controller.hpp" />
     <ClInclude Include="src\simple_render_system.hpp" />
     <ClInclude Include="src\SceneManager.hpp" />
     <ClInclude Include="src\ve_device.hpp" />
@@ -162,6 +167,7 @@
     <ClInclude Include="src\Window.hpp" />
     <ClInclude Include="src\ve_gameobject.hpp" />
     <ClInclude Include="src\ve_renderer.hpp" />
+    <ClInclude Include="src\ve_camera.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".env.cmake" />
