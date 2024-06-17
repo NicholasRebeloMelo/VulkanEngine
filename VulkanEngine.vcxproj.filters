@@ -51,6 +51,9 @@
     <ClCompile Include="src\mouse_view_controller.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\ve_gameobject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Window.hpp">
@@ -89,11 +92,11 @@
     <ClInclude Include="src\mouse_view_controller.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\ve_utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="compile.bat">
-      <Filter>Source Files</Filter>
-    </None>
     <None Include="shaders\simpleShader.frag">
       <Filter>Resource Files</Filter>
     </None>
@@ -102,6 +105,9 @@
     </None>
     <None Include="envWindowsExample.cmake" />
     <None Include=".env.cmake" />
+    <None Include="compile.bat">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="CMakeLists.txt" />

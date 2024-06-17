@@ -104,7 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\GameDev\Vulkan\Include;C:\GameDev\glm;C:\GameDev\glfw-3.4.bin.WIN64\include;C:\GameDev\glslang\include\glslang\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\GameDev\Vulkan\Include;C:\GameDev\glm;C:\GameDev\glfw-3.4.bin.WIN64\include;C:\GameDev\glslang\include\glslang\Include;C:\GameDev\tinyobjloader;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -154,6 +154,7 @@
     <ClCompile Include="src\Window.cpp" />
     <ClCompile Include="src\ve_renderer.cpp" />
     <ClCompile Include="src\ve_camera.cpp" />
+    <ClCompile Include="src\ve_gameobject.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\mouse_view_controller.hpp" />
@@ -168,6 +169,7 @@
     <ClInclude Include="src\ve_gameobject.hpp" />
     <ClInclude Include="src\ve_renderer.hpp" />
     <ClInclude Include="src\ve_camera.hpp" />
+    <ClInclude Include="src\ve_utils.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".env.cmake" />
