@@ -1,9 +1,11 @@
 #pragma once
-#include "Window.hpp"
 
+#include "Window.hpp"
+#include "ve_descriptors.hpp"
 #include "ve_device.hpp"
 #include "ve_gameobject.hpp"
 #include "ve_renderer.hpp"
+
 
 
 //std lib
@@ -33,6 +35,8 @@ namespace ve
 		VeDevice veDevice{veWindow};
 		VeRenderer veRenderer{veWindow, veDevice};
 
+		// order of declaration matter
+		std::unique_ptr<VeDescriptorPool> globalPool{};
 		std::vector<VeGameObject> gameObjects;
 	};
 }

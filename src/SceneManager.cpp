@@ -4,6 +4,7 @@
 #include "mouse_view_controller.hpp"
 #include"ve_camera.hpp"
 #include "simple_render_system.hpp"
+#include "ve_buffer.hpp"
 
 //glm libs
 #define GLM_FORCE_RADIANS
@@ -17,8 +18,18 @@
 #include <cassert>
 namespace ve {
 
+	struct GlobalUbo {
+		alignas(16) glm::mat4 projectionView{ 1.f };
+		alignas(16) glm::vec3 lightDirection = glm::normalize(glm::vec3{ 1.f, -3.f, -1.f });
+	};
+
 	SceneManager::SceneManager()
 	{
+		globalPool = 
+			VeDescriptorPool::Builder(veDevice)
+			.setMaxSets(VeSwapChain::MAX_FRAMES_IN_FLIGHT)
+			.addPoolSize(VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, VeSwapChain::MAX_FRAMES_IN_FLIGHT)
+			.build();
 		loadGameObjects();
 		
 	}
@@ -27,7 +38,34 @@ namespace ve {
 
 	void SceneManager::run()
 	{
-		SimpleRenderSystem simpleRenderSystem{veDevice, veRenderer.getSwapChainRenderPass()};
+		std::vector<std::unique_ptr<VeBuffer>> uboBuffers(VeSwapChain::MAX_FRAMES_IN_FLIGHT);
+		for (int i = 0; i < uboBuffers.size(); i++) {
+			uboBuffers[i] = std::make_unique<VeBuffer>(
+				veDevice,
+				sizeof(GlobalUbo),
+				1,
+				VK_BUFFER_USAGE_UNIFORM_BUFFER_BIT,
+				VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT);
+			uboBuffers[i]->map();
+		}
+
+		auto globalSetLayout = 
+			 VeDescriptorSetLayout::Builder(veDevice)
+			.addBinding(0, VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, VK_SHADER_STAGE_VERTEX_BIT)
+			.build();
+
+		std::vector<VkDescriptorSet> globalDescriptorSets(VeSwapChain::MAX_FRAMES_IN_FLIGHT);
+		for (int i = 0; i < globalDescriptorSets.size(); i++) {
+			auto bufferInfo = uboBuffers[i]->descriptorInfo();
+			VeDescriptorWriter(*globalSetLayout, *globalPool)
+				.writeBuffer(0, &bufferInfo)
+				.build(globalDescriptorSets[i]);
+		}
+
+		SimpleRenderSystem simpleRenderSystem{
+			veDevice, 
+			veRenderer.getSwapChainRenderPass(), 
+			globalSetLayout->getDescriptorSetLayout()};
         VeCamera camera{};
         camera.setViewTarget(glm::vec3(-1.f, -2.f, 2.f), glm::vec3(0.f, 0.f, 2.5f));
 
@@ -59,8 +97,25 @@ namespace ve {
             camera.setPerspectiveProjection(glm::radians(50.f), aspect, 0.1f, 10.f);
 
 			if (auto commandBuffer = veRenderer.beginFrame()) {
+				int frameIndex = veRenderer.getFrameIndex();
+				FrameInfo frameInfo{
+					frameIndex,
+					frameTime,
+					commandBuffer,
+					camera,
+					globalDescriptorSets[frameIndex]};
+
+
+				//update
+				GlobalUbo ubo{};
+				ubo.projectionView = camera.getProjection() * camera.getView();
+				uboBuffers[frameIndex]->writeToBuffer(&ubo);
+				uboBuffers[frameIndex]->flush();
+			
+				
+				//render
 				veRenderer.beginSwapChainRenderPass(commandBuffer);
-				simpleRenderSystem.renderGameObjects(commandBuffer, gameObjects, camera);
+				simpleRenderSystem.renderGameObjects(frameInfo, gameObjects);
 				veRenderer.endSwapChainRenderPass(commandBuffer);
 				veRenderer.endFrame();
 			}

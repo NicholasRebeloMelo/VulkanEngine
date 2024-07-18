@@ -155,6 +155,8 @@
     <ClCompile Include="src\ve_renderer.cpp" />
     <ClCompile Include="src\ve_camera.cpp" />
     <ClCompile Include="src\ve_gameobject.cpp" />
+    <ClCompile Include="src\ve_buffer.cpp" />
+    <ClCompile Include="src\ve_descriptors.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\mouse_view_controller.hpp" />
@@ -170,6 +172,9 @@
     <ClInclude Include="src\ve_renderer.hpp" />
     <ClInclude Include="src\ve_camera.hpp" />
     <ClInclude Include="src\ve_utils.hpp" />
+    <ClInclude Include="src\ve_buffer.hpp" />
+    <ClInclude Include="src\ve_frame_info.hpp" />
+    <ClInclude Include="src\ve_descriptors.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".env.cmake" />

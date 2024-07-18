@@ -1,5 +1,6 @@
 #pragma once
 #include "ve_device.hpp"
+#include "ve_buffer.hpp"
 //glm libs
 #define GLM_FORCE_RADIANS
 #define GLM_FORCE_DEPTH_ZERO_TO_ONE
@@ -51,13 +52,11 @@ namespace ve {
 
 		VeDevice &veDevice;
 
-		VkBuffer vertexBuffer;
-		VkDeviceMemory vertexBufferMemory;
+		std::unique_ptr<VeBuffer> vertexBuffer;
 		uint32_t vertexCount;
 
 		bool hasIndexBuffer = false;
-		VkBuffer indexBuffer;
-		VkDeviceMemory indexBufferMemory;
+		std::unique_ptr<VeBuffer> indexBuffer;
 		uint32_t indexCount;
 
 	};
