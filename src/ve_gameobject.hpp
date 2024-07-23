@@ -4,6 +4,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 //std
 #include <memory>
+#include <unordered_map>
 
 namespace ve {
 
@@ -23,6 +24,7 @@ namespace ve {
 	class VeGameObject {
 	public:
 		using id_t = unsigned int;
+		using Map = std::unordered_map<id_t, VeGameObject>;
 
 		static VeGameObject createGameObject() {
 			static id_t currentId = 0;

@@ -37,6 +37,6 @@ namespace ve
 
 		// order of declaration matter
 		std::unique_ptr<VeDescriptorPool> globalPool{};
-		std::vector<VeGameObject> gameObjects;
+		VeGameObject::Map gameObjects;
 	};
 }

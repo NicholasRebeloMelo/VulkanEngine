@@ -19,8 +19,11 @@
 namespace ve {
 
 	struct GlobalUbo {
-		alignas(16) glm::mat4 projectionView{ 1.f };
-		alignas(16) glm::vec3 lightDirection = glm::normalize(glm::vec3{ 1.f, -3.f, -1.f });
+		glm::mat4 projectionView{ 1.f };
+		
+		glm::vec4 ambientLightColor{ 1.f,1.f,1.f, .02f }; // w = intensity
+		glm::vec3 lightPosition{ -1.f };
+		alignas(16) glm::vec4 lightColor{ 1.f }; // w = intensity
 	};
 
 	SceneManager::SceneManager()
@@ -51,7 +54,7 @@ namespace ve {
 
 		auto globalSetLayout = 
 			 VeDescriptorSetLayout::Builder(veDevice)
-			.addBinding(0, VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, VK_SHADER_STAGE_VERTEX_BIT)
+			.addBinding(0, VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, VK_SHADER_STAGE_ALL_GRAPHICS)
 			.build();
 
 		std::vector<VkDescriptorSet> globalDescriptorSets(VeSwapChain::MAX_FRAMES_IN_FLIGHT);
@@ -70,6 +73,7 @@ namespace ve {
         camera.setViewTarget(glm::vec3(-1.f, -2.f, 2.f), glm::vec3(0.f, 0.f, 2.5f));
 
         auto viewerObject = VeGameObject::createGameObject();
+		viewerObject.transform.translation.z = -2.5f;
 
         KeyboardMovementController cameraController{};
         MouseViewController mouseController{};
@@ -94,7 +98,7 @@ namespace ve {
             camera.setViewYXZ(viewerObject.transform.translation, viewerObject.transform.rotation);
 
             float aspect = veRenderer.getAspectRatio();
-            camera.setPerspectiveProjection(glm::radians(50.f), aspect, 0.1f, 10.f);
+            camera.setPerspectiveProjection(glm::radians(50.f), aspect, 0.1f, 100.f);
 
 			if (auto commandBuffer = veRenderer.beginFrame()) {
 				int frameIndex = veRenderer.getFrameIndex();
@@ -103,7 +107,9 @@ namespace ve {
 					frameTime,
 					commandBuffer,
 					camera,
-					globalDescriptorSets[frameIndex]};
+					globalDescriptorSets[frameIndex],
+					gameObjects				
+				};
 
 
 				//update
@@ -115,7 +121,7 @@ namespace ve {
 				
 				//render
 				veRenderer.beginSwapChainRenderPass(commandBuffer);
-				simpleRenderSystem.renderGameObjects(frameInfo, gameObjects);
+				simpleRenderSystem.renderGameObjects(frameInfo);
 				veRenderer.endSwapChainRenderPass(commandBuffer);
 				veRenderer.endFrame();
 			}
@@ -132,15 +138,22 @@ namespace ve {
         std::shared_ptr<VeModel> veModel = VeModel::createModelFromFile(veDevice, "models/smooth_vase.obj");
         auto smoothVase = VeGameObject::createGameObject();
 		smoothVase.model = veModel;
-		smoothVase.transform.translation = {-0.5f, 0.5f, 2.5f};
+		smoothVase.transform.translation = {-0.5f, 0.5f, 0.f};
 		smoothVase.transform.scale = {3.f, 1.5f, 3.f};
-		gameObjects.push_back(std::move(smoothVase));
+		gameObjects.emplace(smoothVase.getId(), std::move(smoothVase));
 
 		veModel = VeModel::createModelFromFile(veDevice, "models/flat_vase.obj");
 		auto flatVase = VeGameObject::createGameObject();
 		flatVase.model = veModel;
-		flatVase.transform.translation = { 0.5f, 0.5f, 2.5f };
+		flatVase.transform.translation = { 0.5f, 0.5f, 0.f };
 		flatVase.transform.scale = {3.f, 1.5f, 3.f};
-		gameObjects.push_back(std::move(flatVase));
+		gameObjects.emplace(flatVase.getId(), std::move(flatVase));
+
+		veModel = VeModel::createModelFromFile(veDevice, "models/quad.obj");
+		auto floor = VeGameObject::createGameObject();
+		floor.model = veModel;
+		floor.transform.translation = { 0.f, 0.5f, 0.f };
+		floor.transform.scale = { 3.f, 1.f, 3.f };
+		gameObjects.emplace(floor.getId(), std::move(floor));
 	}
 }
