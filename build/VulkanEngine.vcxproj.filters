@@ -7,16 +7,40 @@
     <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\Window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\keyboard_movement_controller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\mouse_view_controller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\simple_render_system.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\ve_buffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\ve_camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\ve_descriptors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\ve_device.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\ve_gameobject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\ve_model.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\ve_pipeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\ve_renderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\ve_swap_chain.cpp">

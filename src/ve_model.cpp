@@ -10,7 +10,7 @@
 
 //libs
 #define TINYOBJLOADER_IMPLEMENTATION
-#include <tiny_obj_loader.h>
+#include <../tinyobjloader/tiny_obj_loader.h>
 #define GLM_ENABLE_EXPERIMENTAL
 #include <glm/gtx/hash.hpp>
 
@@ -44,7 +44,7 @@ namespace ve {
 	std::unique_ptr<VeModel> VeModel::createModelFromFile(VeDevice& device, const std::string& filepath)
 	{
 		Builder builder{};
-		builder.loadModel(filepath);
+		builder.loadModel(ENGINE_DIR + filepath);
 		return std::make_unique<VeModel>(device, builder);
 	}
 
