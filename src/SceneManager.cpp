@@ -129,8 +129,10 @@ namespace ve {
 				
 				//render
 				veRenderer.beginSwapChainRenderPass(commandBuffer);
+				//order matters here
 				simpleRenderSystem.renderGameObjects(frameInfo);
 				pointLightSystem.render(frameInfo);
+
 				veRenderer.endSwapChainRenderPass(commandBuffer);
 				veRenderer.endFrame();
 			}

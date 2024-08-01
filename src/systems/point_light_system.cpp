@@ -9,6 +9,7 @@
 // std
 #include <array>
 #include <cassert>
+#include <map>
 #include <stdexcept>
 
 namespace ve {
@@ -57,6 +58,7 @@ namespace ve {
 
         PipelineConfigInfo pipelineConfig{};
         VePipeline::defaultPipelineConfigInfo(pipelineConfig);
+        VePipeline::enableAlphaBlending(pipelineConfig);
         pipelineConfig.attributeDescription.clear();
         pipelineConfig.bindingDescription.clear();
         pipelineConfig.renderPass = renderPass;
@@ -90,6 +92,17 @@ namespace ve {
     }
 
     void PointLightSystem::render(FrameInfo &frameInfo) {
+        //sort lights
+        std::map<float, VeGameObject::id_t> sorted;
+        for (auto &kv : frameInfo.gameObjects) {
+            auto &obj = kv.second;
+            if (obj.pointLight == nullptr) continue;
+            
+            //distance calculation
+            auto offset = frameInfo.camera.getPosition() - obj.transform.translation;
+            float disSquared = glm::dot(offset, offset);
+            sorted[disSquared] = obj.getId();
+        }
 
         vePipeline->bind(frameInfo.commandBuffer);
 
@@ -102,10 +115,11 @@ namespace ve {
             &frameInfo.globalDescriptorSet,
             0,
             nullptr);
-
-        for (auto &kv : frameInfo.gameObjects) {
-            auto &obj = kv.second;
-            if (obj.pointLight == nullptr) continue;
+        //iterate through sorted lights in reverse
+        for (auto it = sorted.rbegin(); it != sorted.rend(); ++it) {
+            //use game obj id to find light obj
+            auto& obj = frameInfo.gameObjects.at(it->second);
+            
 
             PointLightPushConstants push{};
             push.position = glm::vec4(obj.transform.translation, 1.f);
