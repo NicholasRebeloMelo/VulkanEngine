@@ -13,10 +13,10 @@
     <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\mouse_view_controller.cpp">
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\systems\point_light_system.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\simple_render_system.cpp">
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\systems\simple_render_system.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\ve_buffer.cpp">

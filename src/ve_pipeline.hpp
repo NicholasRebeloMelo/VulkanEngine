@@ -8,6 +8,9 @@ namespace ve {
 		PipelineConfigInfo(const PipelineConfigInfo&) = delete;
 		PipelineConfigInfo& operator=(const PipelineConfigInfo&) = delete;
 
+
+		std::vector<VkVertexInputBindingDescription> bindingDescription{};
+		std::vector<VkVertexInputAttributeDescription> attributeDescription{};
 		VkPipelineViewportStateCreateInfo viewportInfo;
 		VkPipelineInputAssemblyStateCreateInfo inputAssemblyInfo;
 		VkPipelineRasterizationStateCreateInfo rasterizationInfo;
@@ -34,7 +37,7 @@ namespace ve {
 
 		static void defaultPipelineConfigInfo(PipelineConfigInfo& configInfo);
 	private:
-		static std::vector<char> readFile(const std::string filepath);
+		static std::vector<char> readFile(const std::string& filepath);
 
 		void createGraphicsPipeline(const std::string& vertFilepath, const std::string& fragFilepath, const PipelineConfigInfo& configInfo);
 

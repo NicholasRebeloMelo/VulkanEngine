@@ -8,19 +8,19 @@ namespace ve {
 
 	void KeyboardMovementController::moveInPlaneXZ(GLFWwindow* window, float dt, VeGameObject& gameObject)
 	{
-		//glm::vec3 rotate{ 0 };
-		//if (glfwGetKey(window, keys.lookRight) == GLFW_PRESS) rotate.y += 1.0f; 
-		//if (glfwGetKey(window, keys.lookLeft) == GLFW_PRESS) rotate.y -= 1.0f;
-		//if (glfwGetKey(window, keys.lookUp) == GLFW_PRESS) rotate.x += 1.0f;
-		//if (glfwGetKey(window, keys.lookDown) == GLFW_PRESS) rotate.x -= 1.0f;
+		glm::vec3 rotate{ 0 };
+		if (glfwGetKey(window, keys.lookRight) == GLFW_PRESS) rotate.y += 1.0f; 
+		if (glfwGetKey(window, keys.lookLeft) == GLFW_PRESS) rotate.y -= 1.0f;
+		if (glfwGetKey(window, keys.lookUp) == GLFW_PRESS) rotate.x += 1.0f;
+		if (glfwGetKey(window, keys.lookDown) == GLFW_PRESS) rotate.x -= 1.0f;
 
-		//if (glm::dot(rotate, rotate) > std::numeric_limits<float>::epsilon()) {
-		//	gameObject.transform.rotation += lookSpeed * dt * glm::normalize(rotate);
-		//}
+		if (glm::dot(rotate, rotate) > std::numeric_limits<float>::epsilon()) {
+			gameObject.transform.rotation += lookSpeed * dt * glm::normalize(rotate);
+		}
 
-		////limit pitch value between 85 degrees
-		//gameObject.transform.rotation.x = glm::clamp(gameObject.transform.rotation.x, -1.5f, 1.5f);
-		//gameObject.transform.rotation.y = glm::mod(gameObject.transform.rotation.y, glm::two_pi<float>());
+		//limit pitch value between 85 degrees
+		gameObject.transform.rotation.x = glm::clamp(gameObject.transform.rotation.x, -1.5f, 1.5f);
+		gameObject.transform.rotation.y = glm::mod(gameObject.transform.rotation.y, glm::two_pi<float>());
 
 		float yaw = gameObject.transform.rotation.y;
 		const glm::vec3 forwardDir{ sin(yaw), 0.0f, cos(yaw) };

@@ -2,21 +2,21 @@
 
 #include "ve_utils.hpp"
 
+//libs
+#define TINYOBJLOADER_IMPLEMENTATION
+#include <tiny_obj_loader.h>
+#define GLM_ENABLE_EXPERIMENTAL
+#include <glm/gtx/hash.hpp>
+
 //std
 #include<cassert>
 #include<cstring>
 #include<stdexcept>
 #include <unordered_map>
 
-//libs
-#define TINYOBJLOADER_IMPLEMENTATION
-#include <../tinyobjloader/tiny_obj_loader.h>
-#define GLM_ENABLE_EXPERIMENTAL
-#include <glm/gtx/hash.hpp>
-
 #ifndef ENGINE_DIR
 #define ENGINE_DIR "../"
-#endif // !ENGINE_DIR
+#endif 
 
 namespace std {
 	template <>
@@ -41,8 +41,8 @@ namespace ve {
 
 	VeModel::~VeModel(){}
 
-	std::unique_ptr<VeModel> VeModel::createModelFromFile(VeDevice& device, const std::string& filepath)
-	{
+	std::unique_ptr<VeModel> VeModel::createModelFromFile(
+		VeDevice& device, const std::string& filepath){
 		Builder builder{};
 		builder.loadModel(ENGINE_DIR + filepath);
 		return std::make_unique<VeModel>(device, builder);
@@ -136,7 +136,7 @@ namespace ve {
 		}
 	}
 
-	std::vector<VkVertexInputBindingDescription> VeModel::Vertex::getBindingDesciptions()
+	std::vector<VkVertexInputBindingDescription> VeModel::Vertex::getBindingDescriptions()
 	{
 		std::vector<VkVertexInputBindingDescription> bindingDescriptions(1);
 		bindingDescriptions[0].binding = 0;
@@ -145,7 +145,7 @@ namespace ve {
 		return bindingDescriptions;
 	}
 
-	std::vector<VkVertexInputAttributeDescription> VeModel::Vertex::getAttributeDesciptions()
+	std::vector<VkVertexInputAttributeDescription> VeModel::Vertex::getAttributeDescriptions()
 	{
 		std::vector<VkVertexInputAttributeDescription> attributeDescriptions{};
 
@@ -161,7 +161,7 @@ namespace ve {
 	{
 		tinyobj::attrib_t attrib;
 		std::vector<tinyobj::shape_t> shapes;
-		std::vector < tinyobj::material_t> materials;
+		std::vector<tinyobj::material_t> materials;
 		std::string warn, err;
 
 		if (!tinyobj::LoadObj(&attrib, &shapes, &materials, &warn, &err, filepath.c_str())) {

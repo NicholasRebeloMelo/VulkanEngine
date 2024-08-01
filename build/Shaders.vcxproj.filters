@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <CustomBuild Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\build\CMakeFiles\3f4aab51bcc7c78ed5b95668c59664a3\pointLight.frag.spv.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\build\CMakeFiles\3f4aab51bcc7c78ed5b95668c59664a3\pointLight.vert.spv.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
     <CustomBuild Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\build\CMakeFiles\3f4aab51bcc7c78ed5b95668c59664a3\simpleShader.frag.spv.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>

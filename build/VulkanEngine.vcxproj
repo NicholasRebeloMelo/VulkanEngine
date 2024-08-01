@@ -121,7 +121,7 @@
     </Midl>
     <Link>
       <AdditionalDependencies>glfw3.lib;vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:/GameDev/Vulkan/Lib;C:/GameDev/Vulkan/Lib/$(Configuration);C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2022;C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2022/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:/GameDev/Vulkan/Lib;C:/GameDev/Vulkan/Lib/$(Configuration);C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2022;C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2022/$(Configuration);C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build;C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -166,7 +166,7 @@
     </Midl>
     <Link>
       <AdditionalDependencies>glfw3.lib;vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:/GameDev/Vulkan/Lib;C:/GameDev/Vulkan/Lib/$(Configuration);C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2022;C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2022/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:/GameDev/Vulkan/Lib;C:/GameDev/Vulkan/Lib/$(Configuration);C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2022;C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2022/$(Configuration);C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build;C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -211,7 +211,7 @@
     </Midl>
     <Link>
       <AdditionalDependencies>glfw3.lib;vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:/GameDev/Vulkan/Lib;C:/GameDev/Vulkan/Lib/$(Configuration);C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2022;C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2022/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:/GameDev/Vulkan/Lib;C:/GameDev/Vulkan/Lib/$(Configuration);C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2022;C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2022/$(Configuration);C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build;C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -255,7 +255,7 @@
     </Midl>
     <Link>
       <AdditionalDependencies>glfw3.lib;vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:/GameDev/Vulkan/Lib;C:/GameDev/Vulkan/Lib/$(Configuration);C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2022;C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2022/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:/GameDev/Vulkan/Lib;C:/GameDev/Vulkan/Lib/$(Configuration);C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2022;C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2022/$(Configuration);C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build;C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -329,8 +329,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\Window.cpp" />
     <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\keyboard_movement_controller.cpp" />
     <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\main.cpp" />
-    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\mouse_view_controller.cpp" />
-    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\simple_render_system.cpp" />
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\systems\point_light_system.cpp" />
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\systems\simple_render_system.cpp" />
     <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\ve_buffer.cpp" />
     <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\ve_camera.cpp" />
     <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\ve_descriptors.cpp" />

@@ -142,11 +142,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\mouse_view_controller.cpp" />
     <ClCompile Include="src\keyboard_movement_controller.cpp" />
     <ClCompile Include="src\simple_render_system.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\SceneManager.cpp" />
+    <ClCompile Include="src\systems\point_light_system.cpp" />
+    <ClCompile Include="src\systems\simple_render_system.cpp" />
     <ClCompile Include="src\ve_device.cpp" />
     <ClCompile Include="src\ve_model.cpp" />
     <ClCompile Include="src\ve_pipeline.cpp" />
@@ -159,10 +160,11 @@
     <ClCompile Include="src\ve_descriptors.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\mouse_view_controller.hpp" />
     <ClInclude Include="src\keyboard_movement_controller.hpp" />
     <ClInclude Include="src\simple_render_system.hpp" />
     <ClInclude Include="src\SceneManager.hpp" />
+    <ClInclude Include="src\systems\point_light_system.hpp" />
+    <ClInclude Include="src\systems\simple_render_system.hpp" />
     <ClInclude Include="src\ve_device.hpp" />
     <ClInclude Include="src\ve_model.hpp" />
     <ClInclude Include="src\ve_pipeline.hpp" />
@@ -180,6 +182,8 @@
     <None Include=".env.cmake" />
     <None Include="compile.bat" />
     <None Include="envWindowsExample.cmake" />
+    <None Include="shaders\pointLight.frag" />
+    <None Include="shaders\pointLight.vert" />
     <None Include="shaders\simpleShader.frag" />
     <None Include="shaders\simpleShader.vert" />
   </ItemGroup>

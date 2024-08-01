@@ -9,7 +9,7 @@
 
 #ifndef ENGINE_DIR
 #define ENGINE_DIR "../"
-#endif // !ENGINE_DIR
+#endif 
 
 
 namespace ve {
@@ -28,7 +28,7 @@ namespace ve {
 	}
 
 	//read file function
-	std::vector<char> VePipeline::readFile(const std::string filepath)
+	std::vector<char> VePipeline::readFile(const std::string& filepath)
 	{
 		std::string enginePath = ENGINE_DIR + filepath;
 		std::ifstream file{ enginePath, std::ios::ate | std::ios::binary };
@@ -75,8 +75,8 @@ namespace ve {
 		shaderStages[1].pNext = nullptr;
 		shaderStages[1].pSpecializationInfo = nullptr;
 
-		auto bindingDescriptions = VeModel::Vertex::getBindingDesciptions();
-		auto attributeDescriptions = VeModel::Vertex::getAttributeDesciptions();
+		auto& bindingDescriptions = configInfo.bindingDescription;
+		auto& attributeDescriptions = configInfo.attributeDescription;
 		VkPipelineVertexInputStateCreateInfo vertexInputInfo{};
 		vertexInputInfo.sType = VK_STRUCTURE_TYPE_PIPELINE_VERTEX_INPUT_STATE_CREATE_INFO;
 		vertexInputInfo.vertexAttributeDescriptionCount = static_cast<uint32_t>(attributeDescriptions.size()); 
@@ -201,5 +201,8 @@ namespace ve {
 		configInfo.dynamicStateInfo.pDynamicStates = configInfo.dynamicStateEnables.data();
 		configInfo.dynamicStateInfo.dynamicStateCount = static_cast<uint32_t>(configInfo.dynamicStateEnables.size());
 		configInfo.dynamicStateInfo.flags = 0;
+
+		configInfo.bindingDescription = VeModel::Vertex::getBindingDescriptions();
+		configInfo.attributeDescription = VeModel::Vertex::getAttributeDescriptions();
 	}
 }

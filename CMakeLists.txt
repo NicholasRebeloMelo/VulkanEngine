@@ -93,6 +93,7 @@ if (WIN32)
   target_link_directories(${PROJECT_NAME} PUBLIC
     ${Vulkan_LIBRARIES}
     ${GLFW_LIB}
+    ${CMAKE_CURRENT_BINARY_DIR}
   )
  
   target_link_libraries(${PROJECT_NAME} glfw3 vulkan-1)

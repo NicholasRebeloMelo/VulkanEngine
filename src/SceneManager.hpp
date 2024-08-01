@@ -7,12 +7,17 @@
 #include "ve_renderer.hpp"
 
 
+#include "GLFW/glfw3.h"
+
+
 
 //std lib
 #include <memory>
 #include <vector>
 namespace ve 
 {
+	
+
 	class SceneManager 
 	{
 	public: 
@@ -29,8 +34,9 @@ namespace ve
 
 	private:
 		void loadGameObjects();
-		
 
+		
+		
 		VeWindow veWindow{ WIDTH, HEIGHT, "Nick's Vulkan Engine" };
 		VeDevice veDevice{veWindow};
 		VeRenderer veRenderer{veWindow, veDevice};
@@ -38,5 +44,6 @@ namespace ve
 		// order of declaration matter
 		std::unique_ptr<VeDescriptorPool> globalPool{};
 		VeGameObject::Map gameObjects;
+	
 	};
 }
