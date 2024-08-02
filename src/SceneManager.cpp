@@ -1,6 +1,7 @@
 #include "SceneManager.hpp"
 
 #include "keyboard_movement_controller.hpp"
+#include "mouse_movement_controller.hpp"
 #include"ve_camera.hpp"
 #include "systems/simple_render_system.hpp"
 #include "systems/point_light_system.hpp"
@@ -76,7 +77,7 @@ namespace ve {
 		viewerObject.transform.translation.z = -2.5f;
 
         KeyboardMovementController cameraController{};
-       
+		MouseMovementController mouseController{};
 
         auto currentTime = std::chrono::high_resolution_clock::now();
 
@@ -84,7 +85,7 @@ namespace ve {
 		{
 			glfwPollEvents();
 
-            glfwSetInputMode(veWindow.getGLFWwindow(), GLFW_CURSOR_DISABLED, GLFW_TRUE);  // Capture cursor now
+            glfwSetInputMode(veWindow.getGLFWwindow(), GLFW_CURSOR_DISABLED, GLFW_TRUE); 
 			
 
 			GLFWwindow *window = veWindow.getGLFWwindow();
@@ -97,7 +98,8 @@ namespace ve {
 			
 
            cameraController.moveInPlaneXZ(veWindow.getGLFWwindow(), frameTime, viewerObject);
-		  
+		   mouseController.look(veWindow.getGLFWwindow(), frameTime, viewerObject);
+
 		   
 
             camera.setViewYXZ(viewerObject.transform.translation, viewerObject.transform.rotation);

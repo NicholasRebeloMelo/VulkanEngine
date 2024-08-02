@@ -8,7 +8,7 @@ namespace ve {
 
 	void KeyboardMovementController::moveInPlaneXZ(GLFWwindow* window, float dt, VeGameObject& gameObject)
 	{
-		glm::vec3 rotate{ 0 };
+		/*glm::vec3 rotate{ 0 };
 		if (glfwGetKey(window, keys.lookRight) == GLFW_PRESS) rotate.y += 1.0f; 
 		if (glfwGetKey(window, keys.lookLeft) == GLFW_PRESS) rotate.y -= 1.0f;
 		if (glfwGetKey(window, keys.lookUp) == GLFW_PRESS) rotate.x += 1.0f;
@@ -16,7 +16,7 @@ namespace ve {
 
 		if (glm::dot(rotate, rotate) > std::numeric_limits<float>::epsilon()) {
 			gameObject.transform.rotation += lookSpeed * dt * glm::normalize(rotate);
-		}
+		}*/
 
 		//limit pitch value between 85 degrees
 		gameObject.transform.rotation.x = glm::clamp(gameObject.transform.rotation.x, -1.5f, 1.5f);

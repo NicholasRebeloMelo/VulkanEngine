@@ -24,7 +24,7 @@ events:
       The output was:
       0
       MSBuild version 17.10.4+10fbfbf2e for .NET Framework
-      Build started 2024-06-04 6:59:21 PM.
+      Build started 2024-08-01 11:47:24 PM.
       
       Project "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\VulkanEngine\\build\\CMakeFiles\\3.29.4\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -53,7 +53,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.14
+      Time Elapsed 00:00:00.36
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -79,7 +79,7 @@ events:
       The output was:
       0
       MSBuild version 17.10.4+10fbfbf2e for .NET Framework
-      Build started 2024-06-04 6:59:23 PM.
+      Build started 2024-08-01 11:47:25 PM.
       
       Project "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\VulkanEngine\\build\\CMakeFiles\\3.29.4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -108,7 +108,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.94
+      Time Elapsed 00:00:00.34
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -127,8 +127,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/CMakeFiles/CMakeScratch/TryCompile-8zcnty"
-      binary: "C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/CMakeFiles/CMakeScratch/TryCompile-8zcnty"
+      source: "C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/CMakeFiles/CMakeScratch/TryCompile-4wzogd"
+      binary: "C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/CMakeFiles/CMakeScratch/TryCompile-4wzogd"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -137,40 +137,40 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/CMakeFiles/CMakeScratch/TryCompile-8zcnty'
+        Change Dir: 'C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/CMakeFiles/CMakeScratch/TryCompile-4wzogd'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_0bd20.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_5a389.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.10.4+10fbfbf2e for .NET Framework
-        Build started 2024-06-04 6:59:24 PM.
+        Build started 2024-08-01 11:47:25 PM.
         
-        Project "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\VulkanEngine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8zcnty\\cmTC_0bd20.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\VulkanEngine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4wzogd\\cmTC_5a389.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_0bd20.dir\\Debug\\".
+          Creating directory "cmTC_5a389.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\VulkanEngine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8zcnty\\Debug\\".
-          Creating directory "cmTC_0bd20.dir\\Debug\\cmTC_0bd20.tlog\\".
+          Creating directory "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\VulkanEngine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4wzogd\\Debug\\".
+          Creating directory "cmTC_5a389.dir\\Debug\\cmTC_5a389.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_0bd20.dir\\Debug\\cmTC_0bd20.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_0bd20.dir\\Debug\\cmTC_0bd20.tlog\\unsuccessfulbuild".
+          Creating "cmTC_5a389.dir\\Debug\\cmTC_5a389.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_5a389.dir\\Debug\\cmTC_5a389.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0bd20.dir\\Debug\\\\" /Fd"cmTC_0bd20.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\GameDev\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.40.33811 for x64
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5a389.dir\\Debug\\\\" /Fd"cmTC_5a389.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\GameDev\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.40.33813 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0bd20.dir\\Debug\\\\" /Fd"cmTC_0bd20.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\GameDev\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5a389.dir\\Debug\\\\" /Fd"cmTC_5a389.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\GameDev\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\VulkanEngine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8zcnty\\Debug\\cmTC_0bd20.exe" /INCREMENTAL /ILK:"cmTC_0bd20.dir\\Debug\\cmTC_0bd20.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/CMakeFiles/CMakeScratch/TryCompile-8zcnty/Debug/cmTC_0bd20.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/CMakeFiles/CMakeScratch/TryCompile-8zcnty/Debug/cmTC_0bd20.lib" /MACHINE:X64  /machine:x64 cmTC_0bd20.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_0bd20.vcxproj -> C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\VulkanEngine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8zcnty\\Debug\\cmTC_0bd20.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\VulkanEngine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4wzogd\\Debug\\cmTC_5a389.exe" /INCREMENTAL /ILK:"cmTC_5a389.dir\\Debug\\cmTC_5a389.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/CMakeFiles/CMakeScratch/TryCompile-4wzogd/Debug/cmTC_5a389.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/CMakeFiles/CMakeScratch/TryCompile-4wzogd/Debug/cmTC_5a389.lib" /MACHINE:X64  /machine:x64 cmTC_5a389.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_5a389.vcxproj -> C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\VulkanEngine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4wzogd\\Debug\\cmTC_5a389.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_0bd20.dir\\Debug\\cmTC_0bd20.tlog\\unsuccessfulbuild".
-          Touching "cmTC_0bd20.dir\\Debug\\cmTC_0bd20.tlog\\cmTC_0bd20.lastbuildstate".
-        Done Building Project "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\VulkanEngine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8zcnty\\cmTC_0bd20.vcxproj" (default targets).
+          Deleting file "cmTC_5a389.dir\\Debug\\cmTC_5a389.tlog\\unsuccessfulbuild".
+          Touching "cmTC_5a389.dir\\Debug\\cmTC_5a389.tlog\\cmTC_5a389.lastbuildstate".
+        Done Building Project "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\VulkanEngine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4wzogd\\cmTC_5a389.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.93
+        Time Elapsed 00:00:00.33
         
       exitCode: 0
   -
@@ -199,7 +199,7 @@ events:
       - "CMakeLists.txt:18 (project)"
     message: |
       Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/HostX64/x64/link.exe" "-v"
-      Microsoft (R) Incremental Linker Version 14.40.33811.0
+      Microsoft (R) Incremental Linker Version 14.40.33813.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
   -
     kind: "try_compile-v1"
@@ -210,8 +210,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/CMakeFiles/CMakeScratch/TryCompile-n45ek1"
-      binary: "C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/CMakeFiles/CMakeScratch/TryCompile-n45ek1"
+      source: "C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/CMakeFiles/CMakeScratch/TryCompile-9b5s4x"
+      binary: "C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/CMakeFiles/CMakeScratch/TryCompile-9b5s4x"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -221,40 +221,40 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/CMakeFiles/CMakeScratch/TryCompile-n45ek1'
+        Change Dir: 'C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/CMakeFiles/CMakeScratch/TryCompile-9b5s4x'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_59a00.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1bafe.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.10.4+10fbfbf2e for .NET Framework
-        Build started 2024-06-04 6:59:25 PM.
+        Build started 2024-08-01 11:47:26 PM.
         
-        Project "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\VulkanEngine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n45ek1\\cmTC_59a00.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\VulkanEngine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9b5s4x\\cmTC_1bafe.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_59a00.dir\\Debug\\".
+          Creating directory "cmTC_1bafe.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\VulkanEngine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n45ek1\\Debug\\".
-          Creating directory "cmTC_59a00.dir\\Debug\\cmTC_59a00.tlog\\".
+          Creating directory "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\VulkanEngine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9b5s4x\\Debug\\".
+          Creating directory "cmTC_1bafe.dir\\Debug\\cmTC_1bafe.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_59a00.dir\\Debug\\cmTC_59a00.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_59a00.dir\\Debug\\cmTC_59a00.tlog\\unsuccessfulbuild".
+          Creating "cmTC_1bafe.dir\\Debug\\cmTC_1bafe.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_1bafe.dir\\Debug\\cmTC_1bafe.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_59a00.dir\\Debug\\\\" /Fd"cmTC_59a00.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\GameDev\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.40.33811 for x64
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_1bafe.dir\\Debug\\\\" /Fd"cmTC_1bafe.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\GameDev\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.40.33813 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_59a00.dir\\Debug\\\\" /Fd"cmTC_59a00.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\GameDev\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_1bafe.dir\\Debug\\\\" /Fd"cmTC_1bafe.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\GameDev\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\VulkanEngine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n45ek1\\Debug\\cmTC_59a00.exe" /INCREMENTAL /ILK:"cmTC_59a00.dir\\Debug\\cmTC_59a00.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/CMakeFiles/CMakeScratch/TryCompile-n45ek1/Debug/cmTC_59a00.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/CMakeFiles/CMakeScratch/TryCompile-n45ek1/Debug/cmTC_59a00.lib" /MACHINE:X64  /machine:x64 cmTC_59a00.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_59a00.vcxproj -> C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\VulkanEngine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n45ek1\\Debug\\cmTC_59a00.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\VulkanEngine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9b5s4x\\Debug\\cmTC_1bafe.exe" /INCREMENTAL /ILK:"cmTC_1bafe.dir\\Debug\\cmTC_1bafe.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/CMakeFiles/CMakeScratch/TryCompile-9b5s4x/Debug/cmTC_1bafe.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/CMakeFiles/CMakeScratch/TryCompile-9b5s4x/Debug/cmTC_1bafe.lib" /MACHINE:X64  /machine:x64 cmTC_1bafe.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_1bafe.vcxproj -> C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\VulkanEngine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9b5s4x\\Debug\\cmTC_1bafe.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_59a00.dir\\Debug\\cmTC_59a00.tlog\\unsuccessfulbuild".
-          Touching "cmTC_59a00.dir\\Debug\\cmTC_59a00.tlog\\cmTC_59a00.lastbuildstate".
-        Done Building Project "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\VulkanEngine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n45ek1\\cmTC_59a00.vcxproj" (default targets).
+          Deleting file "cmTC_1bafe.dir\\Debug\\cmTC_1bafe.tlog\\unsuccessfulbuild".
+          Touching "cmTC_1bafe.dir\\Debug\\cmTC_1bafe.tlog\\cmTC_1bafe.lastbuildstate".
+        Done Building Project "C:\\Users\\nicho\\OneDrive\\Documents\\GitHub\\VulkanEngine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9b5s4x\\cmTC_1bafe.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.91
+        Time Elapsed 00:00:00.32
         
       exitCode: 0
   -
@@ -283,6 +283,6 @@ events:
       - "CMakeLists.txt:18 (project)"
     message: |
       Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/HostX64/x64/link.exe" "-v"
-      Microsoft (R) Incremental Linker Version 14.40.33811.0
+      Microsoft (R) Incremental Linker Version 14.40.33813.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
 ...

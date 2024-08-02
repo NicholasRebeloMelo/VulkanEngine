@@ -13,6 +13,9 @@
     <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\mouse_movement_controller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\systems\point_light_system.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

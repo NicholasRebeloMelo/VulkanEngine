@@ -143,6 +143,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\keyboard_movement_controller.cpp" />
+    <ClCompile Include="src\mouse_movement_controller.cpp" />
     <ClCompile Include="src\simple_render_system.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\SceneManager.cpp" />
@@ -161,6 +162,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\keyboard_movement_controller.hpp" />
+    <ClInclude Include="src\mouse_movement_controller.hpp" />
     <ClInclude Include="src\simple_render_system.hpp" />
     <ClInclude Include="src\SceneManager.hpp" />
     <ClInclude Include="src\systems\point_light_system.hpp" />

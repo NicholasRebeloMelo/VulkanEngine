@@ -212,21 +212,6 @@ VulkanEngine_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 VulkanEngine_SOURCE_DIR:STATIC=C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine
 
-//Path to a program.
-Vulkan_GLSLANG_VALIDATOR_EXECUTABLE:FILEPATH=C:/GameDev/Vulkan/Bin/glslangValidator.exe
-
-//Path to a program.
-Vulkan_GLSLC_EXECUTABLE:FILEPATH=C:/GameDev/Vulkan/Bin/glslc.exe
-
-//Path to a file.
-Vulkan_INCLUDE_DIR:PATH=C:/GameDev/Vulkan/Include
-
-//Path to a library.
-Vulkan_LIBRARY:FILEPATH=C:/GameDev/Vulkan/Lib/vulkan-1.lib
-
-//The directory containing a CMake configuration file for glfw3.
-glfw3_DIR:PATH=glfw3_DIR-NOTFOUND
-
 
 ########################
 # INTERNAL cache entries
@@ -358,14 +343,4 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//Details about finding Vulkan
-FIND_PACKAGE_MESSAGE_DETAILS_Vulkan:INTERNAL=[C:/GameDev/Vulkan/Lib/vulkan-1.lib][C:/GameDev/Vulkan/Include][cfound components: glslc glslangValidator ][v1.3.283()]
-//ADVANCED property for variable: Vulkan_GLSLANG_VALIDATOR_EXECUTABLE
-Vulkan_GLSLANG_VALIDATOR_EXECUTABLE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: Vulkan_GLSLC_EXECUTABLE
-Vulkan_GLSLC_EXECUTABLE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: Vulkan_INCLUDE_DIR
-Vulkan_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: Vulkan_LIBRARY
-Vulkan_LIBRARY-ADVANCED:INTERNAL=1
 
