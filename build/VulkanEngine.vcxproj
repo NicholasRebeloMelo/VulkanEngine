@@ -90,7 +90,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external;C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src;C:\GameDev\Vulkan\Include;C:\GameDev\tinyobjloader;C:\GameDev\glfw-3.4.bin.WIN64\include;C:\GameDev\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external;C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src;C:\GameDev\Vulkan\Include;C:\GameDev\tinyobjloader;C:\GameDev\glfw-3.4.bin.WIN64\include;C:\GameDev\glm;C:\GameDev\imgui-master\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -109,10 +109,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external;C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src;C:\GameDev\Vulkan\Include;C:\GameDev\tinyobjloader;C:\GameDev\glfw-3.4.bin.WIN64\include;C:\GameDev\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external;C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src;C:\GameDev\Vulkan\Include;C:\GameDev\tinyobjloader;C:\GameDev\glfw-3.4.bin.WIN64\include;C:\GameDev\glm;C:\GameDev\imgui-master\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external;C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src;C:\GameDev\Vulkan\Include;C:\GameDev\tinyobjloader;C:\GameDev\glfw-3.4.bin.WIN64\include;C:\GameDev\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external;C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src;C:\GameDev\Vulkan\Include;C:\GameDev\tinyobjloader;C:\GameDev\glfw-3.4.bin.WIN64\include;C:\GameDev\glm;C:\GameDev\imgui-master\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -121,7 +121,7 @@
     </Midl>
     <Link>
       <AdditionalDependencies>glfw3.lib;vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:/GameDev/Vulkan/Lib;C:/GameDev/Vulkan/Lib/$(Configuration);C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2022;C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2022/$(Configuration);C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build;C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:/GameDev/Vulkan/Lib;C:/GameDev/Vulkan/Lib/$(Configuration);C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2019;C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2019/$(Configuration);C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build;C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -135,7 +135,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external;C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src;C:\GameDev\Vulkan\Include;C:\GameDev\tinyobjloader;C:\GameDev\glfw-3.4.bin.WIN64\include;C:\GameDev\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external;C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src;C:\GameDev\Vulkan\Include;C:\GameDev\tinyobjloader;C:\GameDev\glfw-3.4.bin.WIN64\include;C:\GameDev\glm;C:\GameDev\imgui-master\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -154,10 +154,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external;C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src;C:\GameDev\Vulkan\Include;C:\GameDev\tinyobjloader;C:\GameDev\glfw-3.4.bin.WIN64\include;C:\GameDev\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external;C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src;C:\GameDev\Vulkan\Include;C:\GameDev\tinyobjloader;C:\GameDev\glfw-3.4.bin.WIN64\include;C:\GameDev\glm;C:\GameDev\imgui-master\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external;C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src;C:\GameDev\Vulkan\Include;C:\GameDev\tinyobjloader;C:\GameDev\glfw-3.4.bin.WIN64\include;C:\GameDev\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external;C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src;C:\GameDev\Vulkan\Include;C:\GameDev\tinyobjloader;C:\GameDev\glfw-3.4.bin.WIN64\include;C:\GameDev\glm;C:\GameDev\imgui-master\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -166,7 +166,7 @@
     </Midl>
     <Link>
       <AdditionalDependencies>glfw3.lib;vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:/GameDev/Vulkan/Lib;C:/GameDev/Vulkan/Lib/$(Configuration);C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2022;C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2022/$(Configuration);C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build;C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:/GameDev/Vulkan/Lib;C:/GameDev/Vulkan/Lib/$(Configuration);C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2019;C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2019/$(Configuration);C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build;C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -180,7 +180,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external;C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src;C:\GameDev\Vulkan\Include;C:\GameDev\tinyobjloader;C:\GameDev\glfw-3.4.bin.WIN64\include;C:\GameDev\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external;C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src;C:\GameDev\Vulkan\Include;C:\GameDev\tinyobjloader;C:\GameDev\glfw-3.4.bin.WIN64\include;C:\GameDev\glm;C:\GameDev\imgui-master\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
@@ -199,10 +199,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external;C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src;C:\GameDev\Vulkan\Include;C:\GameDev\tinyobjloader;C:\GameDev\glfw-3.4.bin.WIN64\include;C:\GameDev\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external;C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src;C:\GameDev\Vulkan\Include;C:\GameDev\tinyobjloader;C:\GameDev\glfw-3.4.bin.WIN64\include;C:\GameDev\glm;C:\GameDev\imgui-master\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external;C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src;C:\GameDev\Vulkan\Include;C:\GameDev\tinyobjloader;C:\GameDev\glfw-3.4.bin.WIN64\include;C:\GameDev\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external;C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src;C:\GameDev\Vulkan\Include;C:\GameDev\tinyobjloader;C:\GameDev\glfw-3.4.bin.WIN64\include;C:\GameDev\glm;C:\GameDev\imgui-master\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -211,7 +211,7 @@
     </Midl>
     <Link>
       <AdditionalDependencies>glfw3.lib;vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:/GameDev/Vulkan/Lib;C:/GameDev/Vulkan/Lib/$(Configuration);C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2022;C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2022/$(Configuration);C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build;C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:/GameDev/Vulkan/Lib;C:/GameDev/Vulkan/Lib/$(Configuration);C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2019;C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2019/$(Configuration);C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build;C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -225,7 +225,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external;C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src;C:\GameDev\Vulkan\Include;C:\GameDev\tinyobjloader;C:\GameDev\glfw-3.4.bin.WIN64\include;C:\GameDev\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external;C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src;C:\GameDev\Vulkan\Include;C:\GameDev\tinyobjloader;C:\GameDev\glfw-3.4.bin.WIN64\include;C:\GameDev\glm;C:\GameDev\imgui-master\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -243,10 +243,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external;C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src;C:\GameDev\Vulkan\Include;C:\GameDev\tinyobjloader;C:\GameDev\glfw-3.4.bin.WIN64\include;C:\GameDev\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external;C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src;C:\GameDev\Vulkan\Include;C:\GameDev\tinyobjloader;C:\GameDev\glfw-3.4.bin.WIN64\include;C:\GameDev\glm;C:\GameDev\imgui-master\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external;C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src;C:\GameDev\Vulkan\Include;C:\GameDev\tinyobjloader;C:\GameDev\glfw-3.4.bin.WIN64\include;C:\GameDev\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external;C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src;C:\GameDev\Vulkan\Include;C:\GameDev\tinyobjloader;C:\GameDev\glfw-3.4.bin.WIN64\include;C:\GameDev\glm;C:\GameDev\imgui-master\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -255,7 +255,7 @@
     </Midl>
     <Link>
       <AdditionalDependencies>glfw3.lib;vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:/GameDev/Vulkan/Lib;C:/GameDev/Vulkan/Lib/$(Configuration);C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2022;C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2022/$(Configuration);C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build;C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:/GameDev/Vulkan/Lib;C:/GameDev/Vulkan/Lib/$(Configuration);C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2019;C:/GameDev/glfw-3.4.bin.WIN64/lib-vc2019/$(Configuration);C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build;C:/Users/nicho/OneDrive/Documents/GitHub/VulkanEngine/build/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -325,6 +325,21 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imconfig.h" />
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imgui.cpp" />
+    <ClInclude Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imgui.h" />
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imgui_demo.cpp" />
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imgui_draw.cpp" />
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imgui_impl_glfw.cpp" />
+    <ClInclude Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imgui_impl_glfw.h" />
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imgui_impl_vulkan.cpp" />
+    <ClInclude Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imgui_impl_vulkan.h" />
+    <ClInclude Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imgui_internal.h" />
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imgui_tables.cpp" />
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imgui_widgets.cpp" />
+    <ClInclude Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imstb_rectpack.h" />
+    <ClInclude Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imstb_textedit.h" />
+    <ClInclude Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imstb_truetype.h" />
     <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\SceneManager.cpp" />
     <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\Window.cpp" />
     <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\keyboard_movement_controller.cpp" />
@@ -337,6 +352,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\ve_descriptors.cpp" />
     <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\ve_device.cpp" />
     <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\ve_gameobject.cpp" />
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\ve_gui.cpp" />
     <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\ve_model.cpp" />
     <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\ve_pipeline.cpp" />
     <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\ve_renderer.cpp" />

@@ -27,6 +27,7 @@ namespace ve
 	private:
 		static void framebufferResizeCallback(GLFWwindow *window, int width, int height);
 		void initWindow();
+		
 
 		 int width;
 		 int height;

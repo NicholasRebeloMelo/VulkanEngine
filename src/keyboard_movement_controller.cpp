@@ -8,6 +8,7 @@ namespace ve {
 
 	void KeyboardMovementController::moveInPlaneXZ(GLFWwindow* window, float dt, VeGameObject& gameObject)
 	{
+		//arrow key look
 		/*glm::vec3 rotate{ 0 };
 		if (glfwGetKey(window, keys.lookRight) == GLFW_PRESS) rotate.y += 1.0f; 
 		if (glfwGetKey(window, keys.lookLeft) == GLFW_PRESS) rotate.y -= 1.0f;

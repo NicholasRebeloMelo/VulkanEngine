@@ -104,7 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\GameDev\Vulkan\Include;C:\GameDev\glm;C:\GameDev\glfw-3.4.bin.WIN64\include;C:\GameDev\glslang\include\glslang\Include;C:\GameDev\tinyobjloader;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\GameDev\Vulkan\Include;C:\GameDev\glm;C:\GameDev\glfw-3.4.bin.WIN64\include;C:\GameDev\glslang\include\glslang\Include;C:\GameDev\tinyobjloader;C:\GameDev\imgui-master\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -150,6 +150,7 @@
     <ClCompile Include="src\systems\point_light_system.cpp" />
     <ClCompile Include="src\systems\simple_render_system.cpp" />
     <ClCompile Include="src\ve_device.cpp" />
+    <ClCompile Include="src\ve_gui.cpp" />
     <ClCompile Include="src\ve_model.cpp" />
     <ClCompile Include="src\ve_pipeline.cpp" />
     <ClCompile Include="src\ve_swap_chain.cpp" />
@@ -168,6 +169,7 @@
     <ClInclude Include="src\systems\point_light_system.hpp" />
     <ClInclude Include="src\systems\simple_render_system.hpp" />
     <ClInclude Include="src\ve_device.hpp" />
+    <ClInclude Include="src\ve_gui.hpp" />
     <ClInclude Include="src\ve_model.hpp" />
     <ClInclude Include="src\ve_pipeline.hpp" />
     <ClInclude Include="src\ve_swap_chain.hpp" />

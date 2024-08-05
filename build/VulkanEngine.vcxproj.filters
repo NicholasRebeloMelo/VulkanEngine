@@ -1,6 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imgui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imgui_demo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imgui_draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imgui_impl_glfw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imgui_impl_vulkan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imgui_tables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imgui_widgets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\SceneManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -37,6 +58,9 @@
     <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\ve_gameobject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\ve_gui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\src\ve_model.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -51,9 +75,38 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imgui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imgui_impl_glfw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imgui_impl_vulkan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imgui_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imstb_rectpack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imstb_textedit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\external\imstb_truetype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
     <CustomBuild Include="C:\Users\nicho\OneDrive\Documents\GitHub\VulkanEngine\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{39216CD3-25B3-34EF-84F2-B1488504837F}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{CDBBC98A-2E7E-3CD3-A786-0AA892B4F2E6}</UniqueIdentifier>
     </Filter>

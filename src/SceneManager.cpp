@@ -1,5 +1,6 @@
 #include "SceneManager.hpp"
 
+#include "ve_gui.hpp"
 #include "keyboard_movement_controller.hpp"
 #include "mouse_movement_controller.hpp"
 #include"ve_camera.hpp"
@@ -7,7 +8,10 @@
 #include "systems/point_light_system.hpp"
 #include "ve_buffer.hpp"
 
-//glm libs
+// libs
+#include <imgui.h>
+#include <../imgui-master/imgui/backends/imgui_impl_glfw.h>
+#include <../imgui-master/imgui/backends/imgui_impl_vulkan.h>
 #define GLM_FORCE_RADIANS
 #define GLM_FORCE_DEPTH_ZERO_TO_ONE
 #include<glm/glm.hpp>
@@ -61,6 +65,14 @@ namespace ve {
 				.build(globalDescriptorSets[i]);
 		}
 
+
+		VeImgui veImgui{
+		veWindow,
+		veDevice,
+		veRenderer.getSwapChainRenderPass(),
+		veRenderer.getImageCount()};
+
+
 		SimpleRenderSystem simpleRenderSystem{
 			veDevice, 
 			veRenderer.getSwapChainRenderPass(), 
@@ -70,6 +82,7 @@ namespace ve {
 			veDevice,
 			veRenderer.getSwapChainRenderPass(),
 			globalSetLayout->getDescriptorSetLayout() };
+
         VeCamera camera{};
         camera.setViewTarget(glm::vec3(-1.f, -2.f, 2.f), glm::vec3(0.f, 0.f, 2.5f));
 
@@ -117,6 +130,7 @@ namespace ve {
 					globalDescriptorSets[frameIndex],
 					gameObjects				
 				};
+				veImgui.newFrame();
 
 
 				//update
@@ -133,6 +147,8 @@ namespace ve {
 				veRenderer.beginSwapChainRenderPass(commandBuffer);
 				//order matters here
 				simpleRenderSystem.renderGameObjects(frameInfo);
+				veImgui.runExample();
+				veImgui.render(commandBuffer);
 				pointLightSystem.render(frameInfo);
 
 				veRenderer.endSwapChainRenderPass(commandBuffer);

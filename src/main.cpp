@@ -12,7 +12,6 @@ int main()
 
 	ve::SceneManager scene{};
 
-
 	try 
 	{
 		scene.run();

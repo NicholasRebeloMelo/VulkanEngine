@@ -21,6 +21,7 @@ namespace ve
 		VeRenderer& operator=(const VeRenderer&) = delete;
 
 		VkRenderPass getSwapChainRenderPass() const { return veSwapChain->getRenderPass(); };
+		uint32_t getImageCount() const { return veSwapChain->imageCount(); }
 		float getAspectRatio() const { return veSwapChain->extentAspectRatio(); };
 		bool isFrameInProgress() const { return isFrameStarted; };
 
